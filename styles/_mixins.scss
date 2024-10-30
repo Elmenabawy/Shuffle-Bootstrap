@@ -1,0 +1,11 @@
+@mixin button($bg-color, $text-color, $hover-bg-color: darken($bg-color, 10%), $hover-text-color: $text-color) {
+    @extend %button; // Extend placeholder styles
+    background-color: $bg-color; // Background color of the button
+    color: $text-color; // Text color of the button
+
+    // Hover effect
+    &:hover {
+        background-color: $hover-bg-color; // Change background on hover
+        color: $hover-text-color; // Change text color on hover
+    }
+}

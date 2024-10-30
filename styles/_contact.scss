@@ -1,0 +1,44 @@
+.Contact{
+
+    .info-item{
+        padding: 1.5rem;
+        background-color: $secondary-background-color;
+        i{
+            font-size: 2rem;
+        }
+
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px 0 10px 0;
+        }
+
+        p{
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+
+    form{
+        padding: 1.5rem;
+        background-color: $secondary-background-color;
+
+        input{
+            border-radius: 0;
+
+
+            button{
+                @include button($primary-color,$background-color)
+            }
+            &::placeholder{
+                opacity: .3;
+                font-size: 14px;
+            }
+            &:focus{
+                box-shadow: none!important;
+                outline: none!important;
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+}

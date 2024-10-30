@@ -1,0 +1,46 @@
+
+.About{
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li{
+            padding: .2rem 0;
+            
+            i{
+            font-size: 1.2rem;
+        }
+
+            span {
+                padding-left: 1rem;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+
+        }
+        
+    }
+    a{
+        margin: 1rem 0;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: $background-color;
+        transition: background-color .3s ease;
+        letter-spacing: 1px;
+
+        i{
+            color: $background-color;
+            transition: transform .3s ease;
+        }
+    &:hover{
+        background-color: darken($primary-color, 10%);
+        
+        i {
+            transform: translateX(5px); // Move the icon 5px to the right on hover
+        }
+    }
+    }
+
+    
+}

@@ -1,0 +1,22 @@
+.Stats{
+    background-color: $secondary-background-color;
+    .stats-item{
+        margin: 6rem 0;
+        i {
+                font-size: 3rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        strong{
+            color: $light-color;
+            font-size: .9rem;
+        }
+        span{
+            color: $light-color;
+            font-size: .8rem;
+        }
+    }
+    
+
+}

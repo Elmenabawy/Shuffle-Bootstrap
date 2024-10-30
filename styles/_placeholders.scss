@@ -1,0 +1,11 @@
+%button {
+    display: inline-block; // Makes the button an inline-block element
+    padding: 10px 20px; // Default padding
+    border: none; // No border
+    border-radius: 5px; // Default rounded corners
+    font-size: 16px; // Default font size
+    text-align: center; // Center text
+    text-decoration: none; // No underline for links
+    cursor: pointer; // Cursor changes to pointer on hover
+    transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition for background and text color
+}

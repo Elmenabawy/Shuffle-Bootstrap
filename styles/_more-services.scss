@@ -1,0 +1,23 @@
+.More-services{
+    .card{
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 0;
+        transition: box-shadow .3s ease;
+
+        h3{
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $secondary-color;
+        }
+        img{
+            transition: transform .3s ease;
+        }
+        &:hover{
+            box-shadow: 0px 0 30px  rgba(0, 0, 0, 0.15);
+            img{
+                transform: scale(0.9);
+            }
+        }
+    }
+}

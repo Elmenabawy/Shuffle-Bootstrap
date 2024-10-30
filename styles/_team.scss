@@ -1,0 +1,72 @@
+.Team {
+
+    .team-member {
+        margin-top: 3rem;
+        color: $background-color;
+        position: relative;
+        overflow: hidden;
+        background-color: black;
+
+        h4 {
+            font-size: 18px;
+            ;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        span {
+            font-style: italic;
+            color: $background-color;
+            font-size: .8rem;
+        }
+
+
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: opacity .4s ease;
+
+        }
+
+        .team-member-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-40%);
+            opacity: 0;
+            transition: all .4s ease-out;
+
+            .icon-container {
+                padding-top: .9rem;
+                i {
+                    padding-inline: 2px;
+                    font-size: 1.2rem;
+                    color: $background-color;
+                    transition: color .3s ease;
+
+                    &:hover {
+                        color: $primary-color !important;
+                    }
+                }
+            }
+        }
+
+
+        &:hover img {
+            opacity: 0.5;
+        }
+
+        &:hover .team-member-content {
+            transform: translateY(1%);
+            opacity: 1;
+        }
+    }
+}

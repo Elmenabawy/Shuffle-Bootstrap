@@ -1,0 +1,66 @@
+@import './variables';
+
+// Global Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem; // Use rem for scalability
+    font-weight: 700;
+    color: $secondary-color;
+    font-family: $heading-font; // Ensure this variable is defined in variables.scss
+}
+
+p{
+    color: $secondary-color;
+}
+
+i {
+    color: $primary-color;
+}
+
+ul{
+    list-style: none;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+.section-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
+    .section-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.1rem; 
+            background-color: $primary-color;
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title-container {
+        margin: 2rem 0;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem; 
+    }
+}
+
+//TODO add mixin to buttons for the hero section to opacity.8 and read more buttons to be darken
