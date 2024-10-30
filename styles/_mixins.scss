@@ -1,11 +1,56 @@
-@mixin button($bg-color, $text-color, $hover-bg-color: darken($bg-color, 10%), $hover-text-color: $text-color) {
-    @extend %button; // Extend placeholder styles
-    background-color: $bg-color; // Background color of the button
-    color: $text-color; // Text color of the button
+.primary-btn {
+    text-decoration: none;
+    margin: 1rem 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: $primary-color;
+    color: $background-color;
+    transition: background-color .3s ease;
+    letter-spacing: 1px;
 
-    // Hover effect
     &:hover {
-        background-color: $hover-bg-color; // Change background on hover
-        color: $hover-text-color; // Change text color on hover
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.secondary-btn {
+    background-color: $primary-color;
+    padding: 8px 32px;
+    border-radius: 50px;
+    color: $background-color;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgba($primary-color, 70%);
+    }
+}
+
+@mixin placeholder-style($opacity: 0.3, $font-size: 14px) {
+    &::-webkit-input-placeholder {
+        opacity: $opacity;
+        font-size: $font-size;
+    }
+
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        opacity: $opacity;
+        font-size: $font-size;
+    }
+
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        opacity: $opacity;
+        font-size: $font-size;
+    }
+
+    &:-ms-input-placeholder {
+        /* Edge */
+        opacity: $opacity;
+        font-size: $font-size;
+    }
+
+    &::placeholder {
+        opacity: $opacity !important;
+        font-size: $font-size !important;
     }
 }

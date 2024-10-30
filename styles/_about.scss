@@ -1,15 +1,15 @@
-
-.About{
-    ul{
+.About {
+    ul {
         display: flex;
         flex-direction: column;
         padding: 0;
-        li{
+
+        li {
             padding: .2rem 0;
-            
-            i{
-            font-size: 1.2rem;
-        }
+
+            i {
+                font-size: 1.2rem;
+            }
 
             span {
                 padding-left: 1rem;
@@ -18,29 +18,23 @@
             }
 
         }
-        
-    }
-    a{
-        margin: 1rem 0;
-        padding: 10px 30px;
-        border-radius: 5px;
-        background-color: $primary-color;
-        color: $background-color;
-        transition: background-color .3s ease;
-        letter-spacing: 1px;
 
-        i{
+    }
+
+    a {
+        @extend .primary-btn;
+        
+        i {
             color: $background-color;
             transition: transform .3s ease;
         }
-    &:hover{
-        background-color: darken($primary-color, 10%);
-        
-        i {
-            transform: translateX(5px); // Move the icon 5px to the right on hover
+
+        &:hover {
+            i {
+                transform: translateX(5px); 
+            }
         }
     }
-    }
 
-    
+
 }

@@ -4,9 +4,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.primary-btn, .About a {
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #1BBCA3;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+}
+.primary-btn:hover, .About a:hover {
+  background-color: #158f7c;
+}
+
+.secondary-btn, header .btn {
+  background-color: #1BBCA3;
+  padding: 8px 32px;
+  border-radius: 50px;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease;
+}
+.secondary-btn:hover, header .btn:hover {
+  background-color: rgba(27, 188, 163, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,16 +86,14 @@ section {
     font-size: 1.5rem;
   }
 }
-.Contact form input button {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+input::-moz-placeholder, .Contact .form textarea::-moz-placeholder, textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0.3;
+  font-size: 14px;
+}
+input::placeholder, .Contact .form textarea::placeholder, textarea::placeholder {
+  opacity: 0.3 !important;
+  font-size: 14px !important;
 }
 
 nav {
@@ -129,17 +149,6 @@ header .carousel-overlay {
   text-align: center;
   padding: 20px;
 }
-header .btn {
-  background-color: #1BBCA3;
-  padding: 8px 32px;
-  border-radius: 50px;
-  color: #ffffff !important;
-  transition: background-color 0.3s ease;
-}
-header .btn:hover {
-  background-color: rgba(27, 188, 163, 0.7);
-}
-
 .About ul {
   display: flex;
   flex-direction: column;
@@ -156,21 +165,9 @@ header .btn:hover {
   font-size: 1rem;
   font-weight: 300;
 }
-.About a {
-  margin: 1rem 0;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #1BBCA3;
-  color: #ffffff !important;
-  transition: background-color 0.3s ease;
-  letter-spacing: 1px;
-}
 .About a i {
   color: #ffffff !important;
   transition: transform 0.3s ease;
-}
-.About a:hover {
-  background-color: #158f7c;
 }
 .About a:hover i {
   transform: translateX(5px);
@@ -235,35 +232,22 @@ header .btn:hover {
   font-size: 12px;
   margin: 0;
 }
-.Contact form {
+.Contact .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: 1.5rem;
   background-color: #F2F5F4;
 }
-.Contact form input {
+.Contact .form input, .Contact .form textarea {
   border-radius: 0;
 }
-.Contact form input button {
-  background-color: #1BBCA3;
-  color: #ffffff !important;
-}
-.Contact form input button:hover {
-  background-color: #158f7c;
-  color: #ffffff !important;
-}
-.Contact form input::-moz-placeholder {
-  opacity: 0.3;
-  font-size: 14px;
-}
-.Contact form input::placeholder {
-  opacity: 0.3;
-  font-size: 14px;
-}
-.Contact form input:focus {
+.Contact .form input:focus, .Contact .form textarea:focus {
   box-shadow: none !important;
   outline: none !important;
   border: 1px solid #1BBCA3;
 }
-
 .FAQ {
   padding: 4rem 0;
   background-color: #F2F5F4;

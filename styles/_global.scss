@@ -1,4 +1,4 @@
-@import './variables';
+
 
 // Global Reset
 * {
@@ -61,6 +61,10 @@ section {
     .section-title h2 {
         font-size: 1.5rem; 
     }
+}
+
+input,textarea {
+    @include placeholder-style(0.3, 14px);
 }
 
 //TODO add mixin to buttons for the hero section to opacity.8 and read more buttons to be darken
