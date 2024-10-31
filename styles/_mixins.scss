@@ -27,6 +27,28 @@
     }
 }
 
+@mixin icon-container(
+    $padding-top: $icon-container-padding-top,
+    $padding-inline: $icon-padding-inline,
+    $font-size: $icon-font-size,
+    $color: $icon-color,
+    $hover-color: $icon-hover-color
+    ) {
+    padding-top: $padding-top;
+
+    i {
+
+        padding-inline: $padding-inline;
+        font-size: $font-size;
+        color: $color;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $hover-color !important;
+        }
+    }
+}
+
 @mixin placeholder-style($opacity: 0.3, $font-size: 14px) {
     &::-webkit-input-placeholder {
         opacity: $opacity;
@@ -56,3 +78,16 @@
         font-size: $font-size !important;
     }
 }
+
+
+
+@mixin footer-link($color, $hover-color) {
+    color: $color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $hover-color !important;
+    }
+}
+

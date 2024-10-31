@@ -514,4 +514,82 @@ header .carousel-overlay {
 .Team .team-member:hover .team-member-content {
   transform: translateY(1%);
   opacity: 1;
+}
+
+footer {
+  padding: 3rem 0;
+  background-color: #0E1A18;
+}
+footer h2,
+footer h3 {
+  color: #ffffff !important;
+}
+footer h4 {
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+  color: #ffffff !important;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+footer ul li {
+  padding: 3px;
+}
+footer a {
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+footer a:hover {
+  color: #1BBCA3 !important;
+}
+footer .icon-container {
+  padding-top: 0.9rem;
+}
+footer .icon-container i {
+  padding-inline: 2px;
+  font-size: 1.2rem;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+footer .icon-container i:hover {
+  color: #1BBCA3 !important;
+}
+footer .icon-container i {
+  font-size: 15px;
+  color: #384F4B !important;
+  margin-inline: 0.2rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+footer .copyright {
+  background-color: #1A2624;
+}
+footer .copyright .credits p {
+  font-size: 11px;
+}
+footer .copyright .credits a {
+  color: #1BBCA3 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 13px;
+}
+footer .copyright .credits a:hover {
+  color: #158f7c !important;
 }/*# sourceMappingURL=style.css.map */
