@@ -7,12 +7,14 @@
 .primary-btn, .About a {
   text-decoration: none;
   margin: 1rem 0;
+  width: auto;
   padding: 10px 30px;
   border-radius: 5px;
   background-color: #1BBCA3;
   color: #ffffff !important;
   transition: background-color 0.3s ease;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .primary-btn:hover, .About a:hover {
   background-color: #158f7c;
@@ -234,7 +236,7 @@ header .carousel-overlay {
 }
 .Contact .form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1.5rem;
